@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-java-app
-        image: my-java-app:latest  
+        image: localhost:5000/my-java-app:latest  
         ports:
         - containerPort: 9001  
