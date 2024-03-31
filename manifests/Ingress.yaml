@@ -4,13 +4,13 @@ metadata:
   name: my-java-ingress
 spec:
   rules:
-  - host: 10.50.0.10  # Replace with the IP address of your Kubernetes master node
+  - host: localhost
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: my-java-service  # Replace with the actual name of your Kubernetes Service
+            name: my-java-service
             port:
               number: 80
