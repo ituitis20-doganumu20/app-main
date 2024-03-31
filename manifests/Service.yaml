@@ -9,4 +9,4 @@ spec:
   - protocol: TCP
     port: 80  
     targetPort: 9001 
-  type: LoadBalancer
+  type: ClusterIP  # Use ClusterIP for internal service
