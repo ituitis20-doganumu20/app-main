@@ -7,6 +7,6 @@ spec:
     app: my-java-app
   ports:
   - protocol: TCP
-    port: 80  # Expose the service on port 80
-    targetPort: 9001  # Forward traffic to port 9001 on pods
-  type: ClusterIP  # Use ClusterIP for internal service
+    port: 80  
+    targetPort: 9001 
+  type: LoadBalancer
